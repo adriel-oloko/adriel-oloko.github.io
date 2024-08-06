@@ -1,0 +1,180 @@
+html, body {
+    background-color: #003049;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Visia Duo';
+    src: url('../src/fonts/Visia\ Duo/VisiaPro-BoldOutline.ttf');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    src: url('../src/fonts/MaterialIcons-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Material Icons Round';
+    src: url('../src/fonts/MaterialIconsRound-Regular.otf');
+}
+
+/*@font-face {
+    font-family: 'Inter';
+    src: url('../src/fonts/Inter/Inter-Black.ttf');
+    src: url('../src/fonts/Inter/Inter-Bold.ttf');
+    src: url('../src/fonts/Inter/Inter-ExtraBold.ttf');
+    src: url('../src/fonts/Inter/Inter-ExtraLight.ttf');
+    src: url('../src/fonts/Inter/Inter-Light.ttf');
+    src: url('../src/fonts/Inter/Inter-Medium.ttf');
+    src: url('../src/fonts/Inter/Inter-Regular.ttf');
+    src: url('../src/fonts/Inter/Inter-SemiBold.ttf');
+    src: url('../src/fonts/Inter/Inter-Thin.ttf');
+}*/
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-icons-round {
+    font-family: 'Material Icons Round';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+header > div#side {
+    background-image: url('../images/Snapinsta.app_275243972_4619162731527599_6320560383677402198_n_1080.jpg');
+}
+
+nav > div:nth-of-type(1) { width: 150%; }
+#hero { background-color: #00304950; opacity: 0;}
+#ctaBox { background-color: #00304950; }
+
+.container-box {
+    transform: translateY(10rem);
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.container-left {
+    transform: translateX(-15rem) translateY(5rem);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.container-right {
+    transform: translateX(15rem) translateY(5rem);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+#bigImage { background-image: url('../images/Snapinsta.app_275243972_4619162731527599_6320560383677402198_n_1080.jpg'); }
+#containedImage { background-image: url('../images/Snapinsta.app_275141237_985671442063267_4080968613461093031_n_1080.jpg');}
+
+#controls {
+    height: 10%;
+}
+
+#controls span { font-size: 5rem; }
+#slideshow h4 {
+    font-size: 400%;
+    line-height: 70%;
+}
+
+#blackBox { height: 10%; }
+
+#containedImage { bottom: calc(100% + 3rem);}
+#bigImage { height: 90%; }
+#bigImage p {
+    background-color: #00304990;
+}
+
+#slideshowCount {
+    font-size: 1000%;
+    bottom: 5%;
+    font-family: 'Visia Duo';
+}
+
+#about {
+    padding: 10%;
+}
+
+#about > div img {
+    aspect-ratio: 9/16;
+}
+
+.marquee div {
+    animation: marquee 10s linear infinite;
+}
+
+#quoteQuote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1000%;
+}
+
+@keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -200%;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+    color: blue;
+}
+
+@media (min-width: 768px) {
+    #ctaBox h2 { width: 150%; }
+
+    #slideshowCount { font-size: 1500%; }
+
+    #slideshow > div:nth-of-type(1) { height: 90%; }
+    #slideshow > div:nth-of-type(2) {
+        height: 10%;
+    }
+
+    #blackBox { height: 100%; }
+    #bigImage { height: 100%; }
+    #containedImage { bottom: 10rem;}
+
+    #slideshow h4 {
+        font-size: 500%;
+        left: 20%;
+    }
+    #bigImage p {
+        padding-left: 20%;
+    }
+    #bigImage button {
+        left: 20%;
+    }
+
+    #controls {
+        height: 15%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    #containedImage { bottom: 5rem;}
+    #slideshowCount { font-size: 1000%; } 
+
+    .marquee div {animation: none; }
+}
+
+@media (min-width: 1280px) {
+    
+}

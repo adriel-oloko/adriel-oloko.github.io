@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <title>Dealership</title>
+</head>
+<body>
+    <header class="relative w-full min-h-screen">
+        <nav class="flex w-4/5 md:w-[90%] mx-auto">
+            <div class="w-1/2"><img src="images/logo.png" class="w-1/2 md:w-1/4 pt-2" alt="" /></div>
+            <div class="relative w-1/2 lg:hidden"><span id="openMenu" class="material-symbols-outlined absolute top-1/2 -translate-y-1/2 right-0 text-4xl">menu</span></div>
+            <div class="relative hidden w-[10%] lg:block"><h2 class="absolute top-1/2 -translate-y-1/2 font-semibold text-xl right-0">Home</h2></div>
+            <div class="relative hidden w-[10%] lg:block"><h2 class="absolute top-1/2 -translate-y-1/2 font-semibold text-xl right-0">About</h2></div>
+            <div class="relative hidden w-[10%] lg:block"><h2 class="absolute top-1/2 -translate-y-1/2 font-semibold text-xl right-0">Offices</h2></div>
+            <div class="relative hidden w-[10%] lg:block"><h2 class="absolute top-1/2 -translate-y-1/2 font-semibold text-xl right-0">Brands</h2></div>
+            <div class="relative hidden w-[10%] lg:block"><h2 class="absolute top-1/2 -translate-y-1/2 font-semibold text-xl right-0">Contact</h2></div>
+        </nav>
+
+        <div id="hero" class="w-4/5 mx-auto mt-8 lg:flex lg:w-[90%] md:gap-10 md:absolute md:inset-x-0 md:top-1/2 md:-translate-y-1/2 lg:relative lg:translate-y-0 lg:top-0 lg:inset-x-auto">
+            <div class="relative md:w-3/4 md:mx-auto lg:mx-0 lg:w-5/12">
+                <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 text-left md:text-center lg:text-left">
+                    <h1 class="capitalize text-4xl font-semibold pb-8 border-b-4 border-solid border-black mb-8 lg:text-3x hidden">Unveil Luxury,<br />Embrace Elegance Today.</h1>
+                    <h1 id="heroHeader" class="text-4xl font-semibold pb-8 border-b-4 border-solid border-black mb-8 lg:text-3xl">
+                        <span>
+                            <span>U</span><span>n</span><span>v</span><span>e</span><span>i</span><span>l</span>
+                        </span>
+                        <span>
+                            <span>L</span><span>u</span><span>x</span><span>u</span><span>r</span><span>y</span><span>,</span><br />
+                        </span>
+                        <span>
+                            <span>E</span><span>m</span><span>b</span><span>r</span><span>a</span><span>c</span><span>e</span>
+                        </span>
+                        <span>
+                            <span>E</span><span>l</span><span>e</span><span>g</span><span>a</span><span>n</span><span>c</span><span>e</span>
+                        </span>
+                        <span><span>T</span><span>o</span><span>d</span><span>a</span><span>y.</span></span>
+                    </h1>
+                    <p class="text-xl font-semibold">Explore opulent vehicles that redefine sophistication. Your dream ride awaits now.</p>
+                </div>
+            </div>
+            <div class="relative h-[28rem] w-full mt-8 border-0 border-solid border-black overflow-x-auto lg:h-96">
+                <div id="carSelection" class="relative flex w-[64rem] h-80 gap-4">
+                    <div id="gwagon" class="w-[32rem] h-full bg-gray-600 bg-cover border-2 border-solid border-black"></div>
+                    <div id="rollsr" class="w-[32rem] h-full bg-gray-600 bg-cover border-2 border-solid border-black"></div>
+                    <div id="eclass" class="w-[32rem] h-full bg-gray-600 bg-cover border-2 border-solid border-black"></div>
+                    <div id="prado" class="w-[32rem] h-full bg-gray-600 bg-cover border-2 border-solid border-black"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="mobileMenu" class="fixed p-10 bg-white z-10 inset-0 hidden pt-0 lg:hidden">
+        <nav class="relative flex place-items-center">
+            <div class="w-1/2"><img class="w-full h-auto p-2 bg-prussian_blue md:w-1/2" src="images/logo.png" alt="logo"/></div>
+            <div class="w-1/2 text-right text-3xl text-black lg:hidden"><span id="closeMenu" class="material-icons relative top-0">close</span></div>
+        </nav>
+
+        <div class="pt-8">
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Home</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">About</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Offices</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Brand</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">FAQs</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Services</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Contact</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Careers</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Help Center</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Chat Support</p>
+            
+            <p class="pb-2 text-xl mt-8">contact@company.com</p>
+            <p class="pb-2 text-xl">+1 (234) 567 8901</p>
+            <p class="pb-2 text-xl">79 McAllister St <br />San Francisco, 79102</p>
+        </div>
+    </nav>
+
+    <main>
+        <div id="s1" class="grid w-full h-auto bg-oxford_blue p-8 pb-12 md:pb-4 md:grid-cols-2">
+            <div class="container-box w-full relative md:pr-12">
+                <img src="images/2022-mercedes-benz-a-class-sedan-top-view-carbuzz-458464.jpg" class="relative top-0 pb-8" alt="" />
+            </div>
+            <div class="container-right container-box relative">
+                <div class="">
+                    <h2 class="text-4xl font-bold text-white mb-6">Crafted for Those Who Demand the Best.</h2>
+                    <hr class="container-line h-1">
+                    <p class="mt-6 text-white text-xl">At our car dealership, we pride ourselves on providing exceptional customer service and offering a wide selection of vehicles to suit every need and budget. Whether you're looking for a sleek sports car, a reliable family SUV, or a fuel-efficient hybrid, we have the perfect car for you. Our knowledgeable and friendly staff are here to help you find your dream car and make the car buying process as smooth and enjoyable as possible.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="s2" class="relative w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed">
+            <div class="backdrop-blur-none grid md:grid-cols-2 md:h-screen">
+                <div class="p-10"><h2 class="text-4xl font-semibold text-white relative">Driven by Excellence, Defined by Luxury.</h2></div>
+                <div class="text-white px-10 md:p-10 md:absolute md:w-1/2 md:bottom-10 md:right-10">
+                    <p class="text-xl md:text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sint quo harum quos! Ut mollitia nobis itaque. Inventore quas enim iure impedit voluptatum, tenetur perferendis ea! Ex voluptas amet id?</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="s3" class="bg-black w-full min-h-screen md:flex pt-20">
+            <div><img src="images/916613.png" class="container-box w-full" alt="" /></div>
+            <div class="container-box p-10 text-white">
+                <h3 class="container-box text-4xl mb-4">Our Story</h3>
+                <hr class="container-line h-1">
+
+                <p class="container-box text-xl mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut incidunt ratione inventore deleniti dignissimos numquam eveniet alias? Ipsa dignissimos possimus voluptate esse nemo officia nam in numquam aut, ab pariatur!</p>
+                <p class="container-box text-xl mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut incidunt ratione inventore deleniti dignissimos numquam eveniet alias? Ipsa dignissimos possimus voluptate esse nemo officia nam in numquam aut, ab pariatur!</p>
+            </div>
+        </div>
+
+        <div id="s4" class="w-full h-auto bg-white p-10">
+            <h2 class="text-4xl font-semibold mb-10">
+                <span>
+                    <span>W</span><span>h</span><span>a</span><span>t</span>
+                </span>
+                <span>
+                    <span>W</span><span>e</span>
+                </span>
+                <span>
+                    <span>D</span><span>o</span><span>?</span>
+                </span>
+            </h2>
+
+            <div class="container-box grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="container-box w-full text-white shadow-2xl p-8 bg-oxford_blue">
+                    <div>
+                        <span class="material-symbols-outlined mb-4 text-4xl">monetization_on</span>
+                        <h3 class="capitalize font-semibold text-3xl mb-4">Luxury car sales</h3>
+                        <p>Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed</p>
+                    </div>
+                </div>
+
+                <div class="container-box w-full text-white shadow-2xl p-8 bg-oxford_blue">
+                    <div>
+                        <span class="material-symbols-outlined mb-4 text-4xl">car_tag</span>
+                        <h3 class="capitalize font-semibold text-3xl mb-4">Car Valuation</h3>
+                        <p>Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed</p>
+                    </div>
+                </div>
+                
+                <div class="container-box w-full text-white shadow-2xl p-8 bg-oxford_blue">
+                    <div>
+                        <span class="material-symbols-outlined mb-4 text-4xl">directions_boat</span><span class="material-symbols-outlined mb-4 text-4xl">recommend</span>
+                        <h3 class="capitalize font-semibold text-3xl mb-4">Vehicle Clearing</h3>
+                        <p>Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="s5" class="w-full h-auto bg-white p-10">
+            <h2 class="text-3xl font-semibold capitalize container-box mb-8 text-center">What Our customers are saying?</h2>
+
+            <div class="review-left relative flex w-full md:w-1/2 h-auto shadow-xl md:p-4">
+                <div class="absolute -bottom-1/2 md:-bottom-1/3 right-4 lg:right-0 lg:relative w-1/3 bg-white p-2 md:p-4 rounded-full shadow-xl">
+                    <img src="images/portrait-man-laughing.jpg" class="w-full h-full object-cover rounded-full" alt="" />
+                </div>
+                <div class="w-full lg:w-2/3 p-4">
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, consequatur delectus.</p>
+                    <p class="text-xl font-semibold">- Ola of Lagos</p>
+                </div>
+            </div>
+
+            <div class="review-right relative flex w-full md:w-1/2 h-auto shadow-xl md:p-4 mt-24 lg:mt-6">
+                <div class="absolute -bottom-1/2 md:-bottom-1/3 right-4 lg:right-0 lg:relative w-1/3 bg-white p-2 md:p-4 rounded-full shadow-xl">
+                    <img src="images/portrait-man-laughing.jpg" class="w-full h-full object-cover rounded-full" alt="" />
+                </div>
+                <div class="w-full lg:w-2/3 p-4">
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, consequatur delectus.</p>
+                    <p class="text-xl font-semibold">- Ola of Lagos</p>
+                </div>
+            </div>
+
+            <div class="review-left relative flex w-full md:w-1/2 h-auto shadow-xl md:p-4 mt-24 lg:mt-6">
+                <div class="absolute -bottom-1/2 md:-bottom-1/3 right-4 lg:right-0 lg:relative w-1/3 bg-white p-2 md:p-4 rounded-full shadow-xl">
+                    <img src="images/portrait-man-laughing.jpg" class="w-full h-full object-cover rounded-full" alt="" />
+                </div>
+                <div class="w-full lg:w-2/3 p-4">
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, consequatur delectus.</p>
+                    <p class="text-xl font-semibold">- Ola of Lagos</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="s6" class="relative h-auto grid md:grid-cols-2 mt-20 hidden">
+            <div class="w-full h-80 bg-center bg-cover"></div>
+            <div class="w-full p-10">
+                <h3 class="text-3xl mb-4 font-semibold capitalize">Explore Our collections</h3>
+                <p class="text-xl">Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed</p>
+
+                <button class="border-2 border-solid border-black px-12 py-2 text-xl mt-4 font-semibold">Explore</button>
+            </div>
+        </div>
+
+        <div class="bg-white grid md:grid-cols-2 p-8 text-black">
+            <div>
+                <p class="text-lg">Quality</p>
+                <h2 class="text-4xl font-bold container-scale py-4">Experience the Best Car Deals in Town</h2>
+            </div>
+            <div class="mt-8 md:mt-0 container-scale">
+                <p>At our car dealership, we take pride in our impressive statistics. With a high customer satisfaction rating and years of experience in the business, we have built a strong reputation for providing top-quality cars and exceptional service.</p>
+
+                <h3 class="text-3xl font-bold pt-8">50%</h3>
+                <p class="text-xl">of our customers recommend us for their car needs.</p>
+                <h3 class="text-3xl font-bold pt-8">50%</h3>
+                <p class="text-xl">increase in car sales year after year.</p>
+            </div>
+        </div>
+    
+        <div id="f1" class="h-auto bg-fixed bg-cover bg-center p-8">
+            <div class="w-full h-full border-4 border-solid border-white p-8 text-white">
+                <p class="text-3xl font-semibold">Discover Your Dream Car Today</p>
+                <p class="text-xl">Explore our wide selection of high-quality vehicles and schedule a test drive.</p>
+                <div class="w-full grid gap-4 md:gap-0 md:grid-cols-2 mt-8 md:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <button class="w-fit py-2 px-6 border-black border-solid border-4 bg-black text-xl font-semibold">Contact</button>
+                    <button class="w-fit py-2 px-10 border-white border-solid border-4 text-xl font-semibold">Visit</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq" class="h-auto w-full p-8 pb-24 -mt-1 container-box">
+            <h2 class="text-4xl font-semibold text-center">Frequently Asked Questions</h2>
+            <p class="text-xl text-center pt-4 mb-0">Find answers to common questions about currency exchange procedures, timeframes, and policies.</p>
+
+            <div class="w-full border-b-2 border-b-black border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">How do I purchase a vehicle?
+                        <span id="chevronFaq1Open" onclick="faqOpen(1)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq1Close" onclick="faqClose(1)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer1" class="pt-4 text-xl hidden">To purchase a vehicle, simply visit our dealership, browse our inventory, and speak with one of our sales representatives. They will guide you through the process and help you find the perfect car.</p>
+                </div>
+            </div>
+
+            <div class="w-full border-b-2 border-b-black border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">What financing options are available?
+                        <span id="chevronFaq2Open" onclick="faqOpen(2)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq2Close" onclick="faqClose(2)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer2" class="pt-4 pb-8 text-xl hidden">We offer a variety of financing options to suit your needs. Our team can assist you in securing a loan or lease that fits your budget and financial situation.</p>
+                </div>
+            </div>
+
+            <div class="w-full border-b-2 border-b-black border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">What warranties do you offer?
+                        <span id="chevronFaq3Open" onclick="faqOpen(3)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq3Close" onclick="faqClose(3)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer3" class="pt-4 pb-8 text-xl hidden">We provide comprehensive warranties on all our vehicles to give you peace of mind. Our warranties cover major components and offer various levels of coverage.</p>
+                </div>
+            </div>
+
+            <div class="w-full border-b-2 border-b-black border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">What services do you offer?
+                        <span id="chevronFaq4Open" onclick="faqOpen(4)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq4Close" onclick="faqClose(4)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer4" class="pt-4 pb-8 text-xl hidden">We offer a wide range of services, including regular maintenance, repairs, and inspections. Our certified technicians are trained to work on all makes and models.</p>
+                </div>
+            </div>
+
+            <div class="w-full border-b-2 border-b-black border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">How do I schedule a service appointment?
+                        <span id="chevronFaq5Open" onclick="faqOpen(5)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq5Close" onclick="faqClose(5)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer5" class="pt-4 pb-8 text-xl hidden">To schedule a service appointment, simply give us a call or use our online booking system. Our service team will find a convenient time for you to bring in your vehicle.</p>
+                </div>
+            </div>
+
+            <div class="text-center mx-auto">
+                <h2 class="text-center text-3xl font-semibold pt-16 container-scale">Still have questions?</h2>
+                <p class="text-center text-xl pt-8 container-scale">Contact us for more information or assistance.</p>
+                <button class="border-2 border-solid border-black bg-transparent text-black px-6 py-2 text-xl text-center mt-8 container-scale">Contact Us</button>
+            </div>
+        </div>
+
+        <div id="f2" class=" h-auto p-8 bg-fixed bg-cover bg-center">
+            <div class="text-center">
+                <h2 class="text-4xl text-black capitalize font-semibold">Meet our team</h2>
+                <p class="text-xl">Get to know the friendly faces behind our dealership.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 text-center mt-8 gap-8">
+                <div>
+                    <img src="images/portrait-succesful-senior-entrrepeneur-conference-room.jpg" class="aspect-square object-cover" alt="" />
+                    <h3 class="font-semibold text-3xl pt-4">John Doe</h3>
+                    <p class="text-xl">Sales Manager</p>
+                    <p class="text-xl pt-4">With over 10 years of experience in the automotive industry, John is dedicated to providing exceptional customer service.</p>
+                </div>
+                <div>
+                    <img src="images/portrait-man-laughing.jpg" class="aspect-square object-cover" alt="" />
+                    <h3 class="font-semibold text-3xl pt-4">John Doe</h3>
+                    <p class="text-xl">Sales Manager</p>
+                    <p class="text-xl pt-4">With over 10 years of experience in the automotive industry, John is dedicated to providing exceptional customer service.</p>
+                </div>
+                <div>
+                    <img src="images/portrait-white-man-isolated.jpg" class="aspect-square object-cover" alt="" />
+                    <h3 class="font-semibold text-3xl pt-4">John Doe</h3>
+                    <p class="text-xl">Sales Manager</p>
+                    <p class="text-xl pt-4">With over 10 years of experience in the automotive industry, John is dedicated to providing exceptional customer service.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="w-full p-8 text-center md:p-16">
+            <h2 class="text-3xl font-semibold">If you have a passion for cars and excellent customer service skills, we want to hear from you.</h2>
+            <p class="text-lg">Explore our current job openings.</p>
+            <button class="border-2 border-solid border-black bg-transparent text-black px-6 py-2 text-xl text-center mt-8 container-scale">Contact Us</button>
+        </div>
+
+        <div class="p-8">
+            <p class="text-lg">Join</p>
+            <p class="text-3xl font-semibold py-4">Current Openings</p>
+            <p class="text-lg">Explore our current job openings and join our team.</p>
+
+            <div class="border-2 border-solid border-black mt-8 p-8 pt-0">
+                <div class="border-b-4 border-solid border-black py-8">
+                    <div class="grid md:grid-cols-2">
+                        <div>
+                            <h3 class="text-2xl font-semibold">Sales Associate</h3>
+                            <p class="text-lg">Location: Ikeja, Lagos</p>
+                        </div>
+                        <div>
+                            <button class="border-2 border-solid border-black bg-transparent text-black font-semibold px-10 py-2 text-xl text-center mt-4">Apply Now</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xl pt-4">We are seeking a motivated Sales Associate to join our team. The ideal candidate should have excellent communication skills and a passion for customer service. Apply now to start your career in automotive sales.</p>
+                    </div>
+                </div>
+
+                <div class="border-b-4 border-solid border-black py-8">
+                    <div class="grid md:grid-cols-2">
+                        <div>
+                            <h3 class="text-2xl font-semibold">Service Department</h3>
+                            <p class="text-lg">Location: Ikeja, Lagos</p>
+                        </div>
+                        <div>
+                            <button class="border-2 border-solid border-black bg-transparent text-black font-semibold px-10 py-2 text-xl text-center mt-4">Apply Now</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xl pt-4">Join our Service Department as a skilled Automotive Technician. We offer competitive pay and benefits, as well as ongoing training and development opportunities. Apply now to join our team of experts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pb-8 lg:pb-16">
+        <img src="images/logo.png" class="w-1/5 mx-auto hidden md:block lg:hidden" alt="" />
+        <div class="grid md:grid-cols-5 lg:grid-cols-6 text-center relative px-8">
+            <img src="images/logo.png" class="w-1/2 mx-auto md:hidden lg:w-full lg:block" alt="" />
+            <div class="relative"><h3 class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 text-xl font-semibold py-2 md:inset-0 lg:right-0 lg:bottom-auto">Contact Us</h3></div>
+            <div class="relative"><h3 class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 text-xl font-semibold py-2 md:inset-0 lg:right-0 lg:bottom-auto">About Us</h3></div>
+            <div class="relative"><h3 class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 text-xl font-semibold py-2 md:inset-0 lg:right-0 lg:bottom-auto">FAQs</h3></div>
+            <div class="relative"><h3 class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 text-xl font-semibold py-2 md:inset-0 lg:right-0 lg:bottom-auto">Services</h3></div>
+            <div class="relative"><h3 class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 text-xl font-semibold py-2 md:inset-0 lg:right-0 lg:bottom-auto">Careers</h3></div>
+        </div>
+        <div class="w-auto pt-12 lg:w-1/2 text-center lg:text-left lg:px-16 lg:pt-0">
+            <span class="fa-brands fa-facebook text-3xl px-4 md:pl-0"></span>
+            <span class="fa-brands fa-instagram text-3xl px-4"></span>
+            <span class="fa-brands fa-x-twitter text-3xl px-4"></span>
+            <span class="fa-brands fa-linkedin text-3xl px-4"></span>
+            <span class="fa-brands fa-youtube text-3xl px-4"></span>
+        </div>
+
+        <div class="px-8 w-full mx-auto"><hr /></div>
+        <div class="px-8 md:flex md:flex-row-reverse pt-4 text-center lg:px-16">
+            <div class="lg:w-3/5 grid md:grid-cols-3 md:gap-2">
+                <p class="underline text-xl pb-4 md:pb-0">Privacy Policy</p>
+                <p class="underline text-xl pb-4 md:pb-0">Terms of Service</p>
+                <p class="underline text-xl pb-4 md:pb-0">Cookie Settings</p>
+            </div>
+            <div class="lg:w-2/5"><p class="text-xl lg:text-left">© 2023 Adriel Oloko. All rights reserved.</p></div>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8e616065cd.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+
+    <title>Exchange</title>
+</head>
+<body>
+    <div id="loaderContainer" class="fixed z-50 inset-0 text-center bg-midnight_blue">
+        <span class="loader"></span>
+    </div>
+    <header class="relative w-full h-screen bg-cover bg-center">
+        <nav class="grid w-full grid-cols-2 lg:grid-cols-3">
+            <div>
+                <img src="images/logo-mark.png" class="relative left-3 w-1/4 h-auto md:w-2/12 py-4 xl:w-[10%]" alt="" />
+            </div>
+            <div class="hidden lg:block relative">
+                <table class="absolute h-full w-[200%] -left-[50%] text-white">
+                    <tbody>
+                        <tr>
+                            <td class="capitalize align-middle px-8 font-semibold text-base">Exchange Rates</td>
+                            <td class="capitalize align-middle px-8 font-semibold text-base">currency converter</td>
+                            <td class="capitalize align-middle px-8 font-semibold text-base">about us</td>
+                            <td class="capitalize align-middle px-8 font-semibold text-base">services</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="relative">
+                <span id="menuOpen" class="material-icons-round absolute right-6 top-1/2 -translate-y-1/2 text-4xl text-white">menu</span>
+                <span id="menuClose" class="material-icons-round absolute right-6 top-1/2 -translate-y-1/2 text-4xl text-white hidden">close</span>
+            </div>
+        </nav>
+
+        <div class="pl-8 md:mt-12 lg:pl-16 lg:mt-0 text-white bottom-8 md:w-1/2 absolute md:top-1/2 md:-translate-y-1/2">
+            <div class=""><h1 class="font-bold text-4xl w-3/4 pt-8">Effortlessly convert Cryptocurrency to Naira with us</h1></div>
+
+            <div class="xl:w-3/4">
+                <p class="text-xl pt-4 md:pt-8">Experience seamless and reliable currency exchange services with competitive rates</p>
+                <div class="grid grid-cols-2 lg:w-4/5 mt-6">
+                    <div><button class="border-2 border-solid border-xanthous bg-xanthous capitalize text-white px-6 py-2 text-xl">Get started</button></div>
+                    <div><button class="border-2 border-solid border-white bg-transparent text-white px-6 py-2 text-xl">Learn More</button></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="navbar" class="fixed top-[10%] bg-white inset-x-0 mx-auto w-11/12 rounded-sm p-12 hidden h-auto z-10">
+        <h3 class="py-4 border-b-2 border-solid border-black text-black text-xl font-semibold">Home</h3>
+        <h3 class="py-4 border-b-2 border-solid border-black text-black text-xl font-semibold">Exchange Rates</h3>
+        <h3 class="py-4 border-b-2 border-solid border-black text-black text-xl font-semibold">Currency Converter</h3>
+        <h3 class="py-4 border-b-2 border-solid border-black text-black text-xl font-semibold">About Us</h3>
+        <h3 class="py-4 border-b-2 border-solid border-black text-black text-xl font-semibold">Services</h3>
+        <div class="w-auto pt-8 lg:w-1/2">
+            <span class="fa-brands fa-facebook text-2xl pr-4"></span>
+            <span class="fa-brands fa-instagram text-2xl pr-4"></span>
+            <span class="fa-brands fa-x-twitter text-2xl pr-4"></span>
+            <span class="fa-brands fa-linkedin text-2xl pr-4"></span>
+            <span class="fa-brands fa-youtube text-2xl pr-4"></span>
+        </div>
+    </div>
+    <main class="pt-8 bg-midnight_blue text-white -mt-1">
+        <div id="feature1" class="grid md:grid-cols-2 md:p-8 lg:p-16 lg:pt-12">
+            <div class="px-8 md:px-0 md:pr-4 lg:px-0 lg:pr-12">
+                <h2 class="text-3xl font-semibold">Experience competitive exchange rates for skrill to naira conversions</h2>
+                <p class="text-xl my-4">At our dedicated currency exchange company, we offer competitive rates for converting Skrill to Naira. With our efficient service, you can seamlessly exchange your funds.</p>
+
+                <h3 class="capitalize text-xl font-semibold">efficient</h3>
+                <p class="text-xl mb-4">Our currency exchange service ensures quick and hassle-free conversions with competitive rates.</p>
+
+                <h3 class="capitalize text-xl font-semibold">competitive</h3>
+                <p class="text-xl mb-4">Exchange your Skrill funds to Naira with us and enjoy our competitive rates.</p>
+            </div>
+            <div>
+                <img src="images/20289202_6260989.jpg" class="w-full h-auto md:border-4 border-solid border-white" alt="" />
+            </div>
+        </div>
+
+        <div id="feature2" class="grid bg-white md:grid-cols-2 p-8 text-black lg:p-16 lg:pt-12 -mt-1">
+            <div class="lg:pr-12">
+                <p class="text-xl mb-4 container-scale">Safe</p>
+                <h2 class="text-3xl font-bold container-scale">Protecting Your Transactions and Privacy</h2>
+                <img src="images/10047289.jpg" class="pr-8 pt-8 bg-white hidden md:block container-scale" alt="" />
+            </div>
+            <div class="mt-4 md:mt-0">
+                <p class="text-xl container-scale">At our currency exchange company, we prioritize the security of your transactions and the privacy of your personal information. We employ industry-leading security measures to ensure that your data is protected at all times. Our encrypted platform and robust authentication protocols guarantee a safe and secure exchange process.</p>
+                <button class="border-2 border-solid border-xanthous bg-white text-black px-6 py-2 text-xl mt-4">Learn More</button>
+            </div>
+        </div>
+
+        <img src="images/10047289.jpg" class="px-8 bg-white -mt-1 md:hidden" alt="" />
+
+        <div id="guides" class="bg-white text-center py-16 grid md:grid-cols-2 xl:grid-cols-3 md:px-8 md:py-24 -mt-1 xl:gap-8">
+            <div class="container-scale">
+                <span class="material-icons-round text-black text-[4rem]">bolt</span>
+                <h2 class="w-4/5 text-center m-auto text-2xl text-black font-semibold">Step-by-Step Guide to Exchanging Skrill to Naira</h2>
+                <p class="text-center text-xl text-black pt-4">Follow these simple steps to exchange Skrill to Naira on our platform.</p>
+            </div>
+
+            <div class="container-scale">
+                <span class="material-icons-round text-black text-[4rem]">bolt</span>
+                <h2 class="w-4/5 text-center m-auto text-2xl text-black font-semibold">Step-by-Step Guide to Exchanging Skrill to Naira</h2>
+                <p class="text-center text-xl text-black pt-4">Follow these simple steps to exchange Skrill to Naira on our platform.</p>
+            </div>
+
+            <div class="container-scale">
+                <span class="material-icons-round text-black text-[4rem]">bolt</span>
+                <h2 class="w-4/5 text-center m-auto text-2xl text-black font-semibold">Step-by-Step Guide to Exchanging Skrill to Naira</h2>
+                <p class="text-center text-xl text-black pt-4">Follow these simple steps to exchange Skrill to Naira on our platform.</p>
+            </div>
+        </div>
+
+        <div class="bg-xanthous grid md:grid-cols-2 p-8">
+            <div>
+                <h2 class="text-4xl font-bold container-scale">Experience seamless currency conversions with our dedicated exchange services</h2>
+            </div>
+            <div class="mt-8 md:mt-0 container-scale">
+                <p>Discover the efficiency and competitive rates of our Skrill to Naira exchange services, ensuring customer satisfaction.</p>
+
+                <h3 class="text-3xl font-bold pt-8">50%</h3>
+                <p class="text-xl">Total exchanges done with efficiency and competitive rates</p>
+                <h3 class="text-3xl font-bold pt-8">50%</h3>
+                <p class="text-xl">Customer satisfaction rate with our seamless exchange services</p>
+            </div>
+        </div>
+        <img src="images/10047289.jpg" class="bg-white" alt="" />
+
+        <div id="feature3" class="bg-white p-8 text-black lg:p-16 lg:pt-12">
+            <div class="lg:pr-12 container-box">
+                <h2 class="text-3xl font-bold">Satisfied Customers</h2>
+                <p class="text-xl mb-4 mt-8">Hear what our customers have to say about us</p>
+            </div>
+
+            <div class="grid md:grid-cols-2">
+                <div class="mt-12 md:mt-0 container-box">
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <p class="text-xl">I have been using their service for years and they always provide fast and reliable currency exchange.</p>
+                    <img src="images/portrait-man-laughing.jpg" class="w-20 h-20 rounded-full mt-8" alt="" />
+                    <p class="text-xl font-semibold">John Doe</p>
+                    <p class="text-lg">CEO, Fpo Holdings</p>
+                </div>
+                <div class="mt-12 md:mt-0 container-box">
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <span class="material-icons-round text-4xl -ml-1">star</span>
+                    <p class="text-xl">I have been using their service for years and they always provide fast and reliable currency exchange.</p>
+                    <img src="images/portrait-man-laughing.jpg" class="w-20 h-20 rounded-full mt-8" alt="" />
+                    <p class="text-xl font-semibold">John Doe</p>
+                    <p class="text-lg">CEO, Fpo Holdings</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="pricing" class="bg-white text-black lg:p-16 px-8 pt-24 -mt-1">
+            <div class="text-center">
+                <p class="text-xl mb-4 container-scale">Fast</p>
+                <h2 class="text-4xl font-bold container-scale">Pricing Options</h2>
+                <p class="text-xl mt-4 container-scale">Choose the plan that suits your needs and budget</p>
+
+                
+                <div id="coinBox" class="grid grid-cols-3 w-80 h-16 mx-auto border-4 border-solid border-black mt-8 container-scale">
+                    <div class="relative text-white bg-black" id="btc"><p class="text-center absolute inset-x-0 top-1/2 -translate-y-1/2 font-semibold">Bitcoin</p></div>
+                    <div class="relative" id="eth"><p class="text-center absolute inset-x-0 top-1/2 -translate-y-1/2 font-semibold">Ethereum</p></div>
+                    <div class="relative" id="usdt"><p class="text-center absolute inset-x-0 top-1/2 -translate-y-1/2 font-semibold">USDT</p></div>
+                </div>
+
+                <div class="w-80 h-auto grid md:grid-cols-2 mx-auto md:w-[42rem] xl:grid-cols-3 xl:w-full md:gap-4">
+                    <div class="border-4 border-solid border-black w-80 mt-4 p-8 mx-auto container-box">
+                        <h3 class="text-lg">Basic Plan</h3>
+                        <p class="font-semibold text-4xl pt-4">< $500</p>
+                        <input id="basicDollar" type="number" class="border-2 border-solid border-black px-4 py-2 mt-8 w-64 rounded" placeholder="Amount in Dollars" />
+                        <p id="basicNaira" class="border-2 border-solid border-black px-4 py-2 mt-4 w-64 rounded text-left">Naira Equivalent</p>
+                        <input type="button" class="border-2 border-solid border-black px-4 py-2 mt-4 rounded capitalize w-64 bg-black text-white" value="Get started" />
+                    </div>
+                    <div class="border-4 border-solid border-black w-80 mt-4 p-8 mx-auto container-box">
+                        <h3 class="text-lg">Business Plan</h3>
+                        <p class="font-semibold text-4xl pt-4">$500 - $1000</p>
+                        <input id="businessDollar" type="number" class="border-2 border-solid border-black px-4 py-2 mt-8 w-64 rounded" placeholder="Amount in Dollars" />
+                        <p id="businessNaira" class="border-2 border-solid border-black px-4 py-2 mt-4 w-64 rounded text-left">Naira Equivalent</p>
+                        <input type="button" class="border-2 border-solid border-black px-4 py-2 mt-4 rounded capitalize w-64 bg-black text-white" value="Get started" />
+                    </div>
+
+                    <div class="border-4 border-solid border-black w-80 mt-4 p-8 mx-auto container-box">
+                        <h3 class="text-lg">Enterprise Plan</h3>
+                        <p class="font-semibold text-4xl pt-4">> $1000</p>
+                        <input id="enterpriseDollar" type="number" class="border-2 border-solid border-black px-4 py-2 mt-8 w-64 rounded" placeholder="Amount in Dollars" />
+                        <p id="enterpriseNaira" class="border-2 border-solid border-black px-4 py-2 mt-4 w-64 rounded text-left">Naira Equivalent</p>
+                        <input type="button" class="border-2 border-solid border-black px-4 py-2 mt-4 rounded capitalize w-64 bg-black text-white" value="Get started" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 bg-white px-8 py-16 -mt-1 gap-8">
+            <div><h2 class="text-4xl font-bold text-black container-scale">Start Your currency exchange today</h2></div>
+            <div>
+                <p class="text-xl text-black container-scale">Experience seamless currency exchange with competitive rates.</p>
+                <div class="grid grid-cols-2 lg:w-3/4 mt-6 container-scale">
+                    <div><button class="border-2 border-solid border-xanthous bg-xanthous capitalize text-white px-6 py-2 text-xl">Get started</button></div>
+                    <div><button class="border-2 border-solid border-xanthous bg-transparent text-xanthous px-6 py-2 text-xl">Learn More</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="grid bg-white md:grid-cols-2 p-8 text-black lg:p-16 lg:pt-12 -mt-1">
+            <div class="lg:pr-12">
+                <p class="text-xl mb-4 container-scale">Efficient</p>
+                <h2 class="text-3xl font-bold container-scale">Get in Touch</h2>
+            </div>
+            <div class="mt-4 md:mt-0 container-box">
+                <span class="material-icons text-black text-2xl relative top-[0.35rem]">mail</span><span class="text-xl pl-6 font-semibold">Email</span><br />
+                <span class="material-icons text-black text-2xl relative top-1 invisible">mail</span><span class="text-xl pl-6">test@mail.com</span>
+                <br /><br />
+                <span class="material-icons text-black text-2xl relative top-[0.35rem] mt-8">call</span><span class="text-xl pl-6 font-semibold">Phone</span><br />
+                <span class="material-icons text-black text-2xl relative top-1 invisible">mail</span><span class="text-xl pl-6">+1 (555) 123-4567</span>
+                <br /><br />
+                <span class="material-icons text-black text-2xl relative top-[0.35rem] mt-8">location_on</span><span class="text-xl pl-6 font-semibold">Office</span><br />
+                <span class="material-icons text-black text-2xl relative top-1 invisible">mail</span><span class="text-xl pl-6">123 Main St, Sydney NSW 2000, Australia</span>
+            </div>
+        </div>
+
+        <img src="images/wave (1).svg" class="bg-white -mt-1" alt=""/>
+        <div id="faq" class="h-auto w-full bg-midnight_blue text-white p-8 pb-24 -mt-1 md:px-72 container-box">
+            <h2 class="text-4xl font-semibold text-center">FAQs</h2>
+            <p class="text-xl text-center pt-4 mb-0">Find answers to common questions about currency exchange procedures, timeframes, and policies.</p>
+
+            <div class="w-full border-b-2 border-b-white border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">How do I exchange currencies?
+                        <span id="chevronFaq1Open" onclick="faqOpen(1)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq1Close" onclick="faqClose(1)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer1" class="pt-4 text-xl hidden">To exchange currencies, simply follow these steps: 1. Create an account on our platform. 2. Select the currencies you want to exchange. 3. Enter the amount you wish to convert. 4. Review the exchange rate and fees. 5. Confirm the transaction. Your funds will be exchanged accordingly.</p>
+                </div>
+            </div>
+
+            <div class="w-full border-b-2 border-b-white border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">What are the fees?
+                        <span id="chevronFaq2Open" onclick="faqOpen(2)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq2Close" onclick="faqClose(2)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer2" class="pt-4 pb-8 text-xl hidden">Our fees vary depending on the currency pair and the amount you wish to exchange. You can find detailed information about our fees on our website or by contacting our customer support.</p>
+                </div>
+            </div>
+
+            <div class="w-full border-b-2 border-b-white border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">How long does it take?
+                        <span id="chevronFaq3Open" onclick="faqOpen(3)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq3Close" onclick="faqClose(3)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer3" class="pt-4 pb-8 text-xl hidden">The time it takes to complete a currency exchange transaction depends on various factors, such as the currencies involved and the payment method used. In general, most transactions are processed within 1-2 business days.</p>
+                </div>
+            </div>
+
+            <div class="w-full border-b-2 border-b-white border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">Is my information secure?
+                        <span id="chevronFaq4Open" onclick="faqOpen(4)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq4Close" onclick="faqClose(4)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer4" class="pt-4 pb-8 text-xl hidden">We take the security and privacy of our customers' information very seriously. We use industry-standard encryption technology to protect your data and adhere to strict privacy policies to ensure the confidentiality of your personal and financial information.</p>
+                </div>
+            </div>
+
+            <div class="w-full border-b-2 border-b-white border-solid py-8 container-box">
+                <div>
+                    <h3 class="w-full relative font-semibold text-xl">What if I need help?
+                        <span id="chevronFaq5Open" onclick="faqOpen(5)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2">expand_more</span>
+                        <span id="chevronFaq5Close" onclick="faqClose(5)" class="material-icons absolute text-4xl right-0 top-1/2 -translate-y-1/2 hidden">expand_less</span>
+                    </h3>
+                    <p id="faqAnswer5" class="pt-4 pb-8 text-xl hidden">If you need any assistance or have further questions, our dedicated customer support team is available 24/7 to provide you with the help you need. You can reach us through phone, email, or live chat.</p>
+                </div>
+            </div>
+
+            <div class="text-center mx-auto">
+                <h2 class="text-center text-3xl font-semibold pt-16 container-scale">Still have questions?</h2>
+                <p class="text-center text-xl pt-8 container-scale">Contact us for more information or assistance.</p>
+                <button class="border-2 border-solid border-white bg-transparent text-white px-6 py-2 text-xl text-center mt-8 container-scale">Contact Us</button>
+            </div>
+        </div>
+
+        <div id="contact" class="grid bg-white md:grid-cols-2 p-8 text-black lg:p-16 lg:pt-12 -mt-1">
+            <div class="lg:pr-12 container-scale">
+                <p class="text-xl mb-4">Stay informed, subscribe</p>
+                <h2 class="text-3xl font-bold container-scale">Receive our latest news and updates directly to your inbox</h2>
+            </div>
+            <div class="mt-4 md:mt-0 container-scale">
+                <input type="email" class="w-full text-xl py-2 border-black border-2 border-solid text-black px-2 md:w-3/4 md:float-right" placeholder="Enter email address">
+                <button class="border-2 border-solid border-black bg-transparent text-black px-6 py-2 text-xl w-full font-bold mt-4 md:w-3/4 md:float-right">Join</button>
+
+                <p class="text-xl mt-4 md:w-3/4 md:float-right">By subscribing, you agree to our Privacy Policy.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-black -mt-1 bg-white p-12">    
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 pb-12 border-b-2 border-solid border-black">
+            <div><img src="images/logo-cropped.jpg" class="w-1/4 md:w-1/2 h-auto" alt=""/></div>
+            <div>
+                <h3 class="text-xl font-semibold pb-2">About Us</h3>
+                <p class="text-xl py-2 font-medium">Services</p>
+                <p class="text-xl py-2 font-medium">Pricing</p>
+                <p class="text-xl py-2 font-medium">Contact</p>
+                <p class="text-xl py-2 font-medium">FAQ</p>
+                <p class="text-xl py-2 font-medium">Blog</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold pb-2">Partners</h3>
+                <p class="text-xl py-2 font-medium">Support</p>
+                <p class="text-xl py-2 font-medium">Resources</p>
+                <p class="text-xl py-2 font-medium">Terms</p>
+                <p class="text-xl py-2 font-medium">Privacy</p>
+                <p class="text-xl py-2 font-medium">Security</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold pb-2">Sitemap</h3>
+                <p class="text-xl py-2 font-medium">Affiliate Program</p>
+                <p class="text-xl py-2 font-medium">Become a Partner</p>
+                <p class="text-xl py-2 font-medium">Customer Stories</p>
+                <p class="text-xl py-2 font-medium">Press</p>
+                <p class="text-xl py-2 font-medium">Careers</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold pb-2">Community</h3>
+                <p class="text-xl py-2 font-medium">Help Center</p>
+                <p class="text-xl py-2 font-medium">Contact Us</p>
+                <p class="text-xl py-2 font-medium">Support Center</p>
+                <p class="text-xl py-2 font-medium">Knowledge Base</p>
+            </div>
+        </div>
+
+        <div class="w-auto pt-12 lg:w-1/2">
+            <span class="fa-brands fa-facebook text-3xl pr-4"></span>
+            <span class="fa-brands fa-instagram text-3xl pr-4"></span>
+            <span class="fa-brands fa-x-twitter text-3xl pr-4"></span>
+            <span class="fa-brands fa-linkedin text-3xl pr-4"></span>
+            <span class="fa-brands fa-youtube text-3xl pr-4"></span>
+        </div>
+
+        <div class="md:flex md:flex-row-reverse pt-4">
+            <div class="lg:w-3/5 grid md:grid-cols-3 md:gap-2">
+                <p class="underline text-xl pb-4 md:pb-0">Privacy Policy</p>
+                <p class="underline text-xl pb-4 md:pb-0">Terms of Service</p>
+                <p class="underline text-xl pb-4 md:pb-0">Cookie Settings</p>
+            </div>
+            <div class="lg:w-2/5"><p class="text-xl">© 2023 Relume. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

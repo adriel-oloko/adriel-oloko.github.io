@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <title>Landscape - Home</title>
+</head>
+<body>
+    <div id="loaderContainer" class="fixed z-50 inset-0 text-center bg-prussian_blue">
+        <span class="loader w-12 h-12 inline-block relative top-1/2 -translate-y-1/2"></span>
+    </div>
+
+    <nav id="mobileMenu" class="fixed p-10 bg-white z-10 inset-0 hidden">
+        <nav class="relative flex place-items-center">
+            <div class="w-1/2"><img class="w-full h-auto p-2 bg-prussian_blue md:w-1/2" src="images/Barrel & Bucket.png" alt="logo"/></div>
+            <div class="w-1/2 text-right text-3xl text-black lg:hidden"><span id="closeMenu" class="material-icons relative top-0">close</span></div>
+        </nav>
+
+        <div class="pt-8">
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Home</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">About</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Contact Us</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Careers</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Blog</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Getting Started</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Help Center</p>
+            <p class="py-4 text-xl border-b-2 border-solid border-black">Chat Support</p>
+            
+            <p class="pb-2 text-xl mt-8">contact@company.com</p>
+            <p class="pb-2 text-xl">+1 (234) 567 8901</p>
+            <p class="pb-2 text-xl">79 McAllister St <br />San Francisco, 79102</p>
+        </div>
+    </nav>
+
+    <header class="relative w-full p-10 lg:px-[102px]">
+        <div class="absolute inset-0 bg-gradient-to-b from-prussian_blue z-0 opacity-25"></div>
+        <nav class="relative flex place-items-center">
+            <div class="w-1/2"><img class="max-w-max h-6" src="images/Barrel & Bucket.png" alt="logo"/></div>
+            <div class="w-1/2 text-right text-3xl text-black lg:hidden"><span id="openMenu" class="material-icons relative top-1">menu</span></div>
+
+            
+            <div class="w-[12.5%] hidden lg:block"><h3 class="text-xl font-semibold text-right">Home</h3></div>
+            <div class="w-[12.5%] hidden lg:block"><h3 class="text-xl font-semibold text-right">About</h3></div>
+            <div class="w-[12.5%] hidden lg:block"><h3 class="text-xl font-semibold text-right">Services</h3></div>
+            <div class="w-[12.5%] hidden lg:block"><h3 class="text-xl font-semibold text-right">Contact</h3></div>
+        </nav>
+
+        <div class="md:flex">
+            <div class="relative mt-[72px] md:w-3/5 xl:mt-0 xl:translate-y-1/4">
+                <h1 class="text-black text-5xl font-semibold md:text-5xl">Where nature meets craftsmanship</h1>
+                <p class="text-black text-xl py-6">Discover the artistry of our landscaping company, where nature meets craftsmanship. Elevate your outdoor space with our passion for design, precision, and dedication to bringing your vision to life.</p>
+    
+                <div class="grid md:grid-cols-2 w-fit gap-6">
+                    <button class="w-fit py-2 px-5 text-xl bg-prussian_blue border-4 border-solid border-prussian_blue text-white">Contact us</button>
+                    <button class="w-fit py-2 px-5 text-xl border-4 border-solid border-prussian_blue">Learn more</button>
+                </div>
+            </div>
+
+            <div class="relative md:w-2/5 md:left-[102px] top-14">
+                <img class="w-full h-full object-cover aspect-9/16" src="images/landscape-gardener-laying-turf-new-lawn.jpg" alt="landscape gardener laying turf new lawn" />
+            </div>
+        </div>
+        
+    </header>
+
+    <main class="-mt-[80px] md:mt-0 lg:-mt-[80px]">
+        <div class="bg-blue_green py-p-border md:py-10 px-10 lg:p-p-border lg:py-0">
+            <h2 class="text-4xl font-semibold text-white pt-10 md:pt-0 lg:pt-14 container-box">Our Services</h2>
+
+            <div class="relative w-full mt-8 border-0 border-solid border-black overflow-x-auto lg:h-96 container-box">
+                <div id="carSelection" class="relative flex w-[50rem] gap-4">
+                    <div class="w-64 h-auto bg-transparent bg-cover border-4 border-solid border-black p-6 text-white hover:bg-black container-box">
+                        <span class="material-icons text-4xl">design_services</span>
+                        <h3 class="text-2xl font-semibold py-3">Design and Installation</h3>
+                        <p class="text-base">Custom outdoor spaces tailored to your lifestyle, from design planning to complete installation</p>
+                    </div>
+                    <div class="w-64 h-auto bg-transparent bg-cover border-4 border-solid border-black p-6 text-white hover:bg-black container-box">
+                        <span class="material-icons text-4xl">construction</span>
+                        <h3 class="text-2xl font-semibold py-3">Lawn Maintenance</h3>
+                        <p class="text-base">Year-round upkeep for vibrant, healthy landscapes, including mowing, trimming, fertilizing, and seasonal clean-up</p>
+                    </div>
+                    <div class="w-64 h-auto bg-transparent bg-cover border-4 border-solid border-black p-6 text-white hover:bg-black container-box">
+                        <span class="material-icons text-4xl">foundation</span>
+                        <h3 class="text-2xl font-semibold py-3">Outdoor Construction</h3>
+                        <p class="text-base">Expertly crafted outdoor features including patios, walkways, fire pits, and lighting installations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-10 lg:px-[102px]">
+            <img src="images/black-faucet-with-steel-sink-stylish-modern-kitchen.jpg" class="w-full aspect-[332/110.64] object-cover container-box" alt="black faucet with steel sink stylish modern kitchen" />
+            <div class="md:flex py-8">
+                <div class="md:w-3/4 md:pr-24">
+                    <h2 class="text-4xl font-semibold container-box">Behind the Landscapes - Our Story</h2>
+                    <p class="pt-8 text-xl container-box">At [Company Name], we blend passion for nature with expertise in craftsmanship to create awe-inspiring outdoor spaces. With years of experience, our dedicated team brings visions to life, from initial concept to meticulous execution. We pride ourselves on personalized service, attention to detail, and a commitment to exceeding expectations. Let us transform your landscape into a masterpiece of beauty and functionality</p>
+                </div>
+                <div class="md:w-1/4">
+                    <img src="images/image-removebg-preview (3).png" class="w-full md:h-full md:object-cover md:object-left container-box" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="md:flex md:flex-row-reverse p-10 pt-0 lg:px-[102px] lg:pt-0 gap-8">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-semibold container-box">Best Landscape Design & Installation Company In Piscataway</h2>
+                <p class="text-xl py-4 md:pb-0 container-box">Transform your outdoor space with the expertise of the premier landscape design and installation company in Piscataway. From conceptualization to execution, we create stunning landscapes tailored to your vision. With meticulous attention to detail and a commitment to excellence, we bring dreams to life, one project at a time.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/ladderman.png" class="w-full md:h-full md:object-cover border-2 border-solid border-black container-box" alt="" />
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 p-10 lg:px-[102px] gap-8 container-box">
+            <div class="">
+                <img src="images/man-uniform-trimming-hedge-during-summer-time.jpg" class="object-cover aspect-[4/6] w-full rounded-3xl container-box" alt="" />
+                <img src="images/man-uniform-trimming-hedge-during-summer-time.jpg" class="object-cover aspect-[4/2] w-full rounded-3xl mt-8 container-box" alt="" />
+            </div>
+            <div class="">
+                <img src="images/man-uniform-trimming-hedge-during-summer-time.jpg" class="object-cover aspect-[4/2] w-full rounded-3xl container-box" alt="" />
+                <img src="images/man-uniform-trimming-hedge-during-summer-time.jpg" class="object-cover aspect-[4/6] w-full rounded-3xl mt-8 container-box" alt="" />
+            </div>
+        </div>
+
+        <div id="faq" class="grid md:grid-cols-2 p-10 pt-0 lg:px-[102px] gap-8 container-box">
+            <div>
+                <h2 class="text-4xl font-semibold pb-4 container-box">Frequently Asked Questions</h2>
+                <p class="text-xl container-box">Common questions answered about our landscaping services, helping you make informed decisions for your property</p>
+                <img src="images/cwok_casual_21 1.png" class="w-full container-box" alt="" />
+            </div>
+
+            <div class="container-box">
+                <div class="h-fit relative">
+                    <div class="absolute right-0 left-8 top-8 -bottom-8 bg-prussian_blue"></div>
+
+                    <div class="relative bg-selective_yellow p-6 text-white" style="width: calc(100% - 32px);">
+                        <div class="w-full border-b-2 border-b-white border-solid pb-6 container-box">
+                            <h3 class="w-full relative font-semibold text-xl flex">
+                                <span class="w-[90%]">What services do you offer for landscape design and installation?</span>
+                                <span class="w-[10%]">
+                                    <span id="chevronFaq1Open" onclick="faqOpen(1)" class="material-icons text-4xl text-right">expand_more</span>
+                                    <span id="chevronFaq1Close" onclick="faqClose(1)" class="material-icons text-4xl text-right hidden">expand_less</span>
+                                </span>
+                            </h3>
+                            <p id="faqAnswer1" class="pt-4 text-xl hidden">Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis</p>
+                        </div>
+    
+                        <div class="w-full border-b-2 border-b-white border-solid py-6 container-box">
+                            <h3 class="w-full relative font-semibold text-xl flex">
+                                <span class="w-[90%]">How often do you recommend lawn maintenance and what does it include?</span>
+                                <span class="w-[10%]">
+                                    <span id="chevronFaq2Open" onclick="faqOpen(2)" class="material-icons text-4xl text-right">expand_more</span>
+                                    <span id="chevronFaq2Close" onclick="faqClose(2)" class="material-icons text-4xl text-right hidden">expand_less</span>
+                                </span>
+                            </h3>
+                            <p id="faqAnswer2" class="pt-4 text-xl hidden">Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis</p>
+                        </div>
+    
+                        <div class="w-full border-b-2 border-b-white border-solid py-6 container-box">
+                            <h3 class="w-full relative font-semibold text-xl flex">
+                                <span class="w-[90%]">Do you provide warranties or guarantees for your landscaping work?</span>
+                                <span class="w-[10%]">
+                                    <span id="chevronFaq3Open" onclick="faqOpen(3)" class="material-icons text-4xl text-right">expand_more</span>
+                                    <span id="chevronFaq3Close" onclick="faqClose(3)" class="material-icons text-4xl text-right hidden">expand_less</span>
+                                </span>
+                            </h3>
+                            <p id="faqAnswer3" class="pt-4 text-xl hidden">Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis</p>
+                        </div>
+    
+                        <div class="w-full border-b-2 border-b-white border-solid py-6 container-box">
+                            <h3 class="w-full relative font-semibold text-xl flex">
+                                <span class="w-[90%]">Can you help with selecting plants that thrive in our local climate?</span>
+                                <span class="w-[10%]">
+                                    <span id="chevronFaq4Open" onclick="faqOpen(4)" class="material-icons text-4xl text-right">expand_more</span>
+                                    <span id="chevronFaq4Close" onclick="faqClose(4)" class="material-icons text-4xl text-right hidden">expand_less</span>
+                                </span>
+                            </h3>
+                            <p id="faqAnswer4" class="pt-4 text-xl hidden">Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis</p>
+                        </div>
+    
+                        <div class="w-full border-b-2 border-b-white border-solid py-6 container-box">
+                            <h3 class="w-full relative font-semibold text-xl flex">
+                                <span class="w-[90%]">What is your process for designing and building hardscaping features?</span>
+                                <span class="w-[10%]">
+                                    <span id="chevronFaq51Open" onclick="faqOpen(5)" class="material-icons text-4xl text-right">expand_more</span>
+                                    <span id="chevronFaq51Close" onclick="faqClose(5)" class="material-icons text-4xl text-right hidden">expand_less</span>
+                                </span>
+                            </h3>
+                            <p id="faqAnswer5" class="pt-4 text-xl hidden">Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis</p>
+                        </div>
+    
+                        <div class="w-full border-b-2 border-b-white border-solid py-6 container-box">
+                            <h3 class="w-full relative font-semibold text-xl flex">
+                                <span class="w-[90%]">Do you offer eco-friendly or sustainable landscaping options?</span>
+                                <span class="w-[10%]">
+                                    <span id="chevronFaq6Open" onclick="faqOpen(6)" class="material-icons text-4xl text-right">expand_more</span>
+                                    <span id="chevronFaq6Close" onclick="faqClose(6)" class="material-icons text-4xl text-right hidden">expand_less</span>
+                                </span>
+                            </h3>
+                            <p id="faqAnswer6" class="pt-4 text-xl hidden">Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-prussian_blue p-10 mt-10 lg:p-[102px] lg:mt-[102px]">
+            <h2 class="text-5xl font-semibold text-white text-center container-box">Reviews</h2>
+
+            <div class="grid md:grid-cols-2 text-white pt-10 lg:pt-p-border gap-8">
+                <div><img src="images/portrait-white-man-isolated.jpg" class="w-full h-full object-cover object-center container-box" alt="" /></div>
+                <div class="container-box">
+                    <h3 class="text-4xl font-semibold">Not failed me in over 5 years of using them</h3>
+                    <p class="text-xl pt-4">They are professional landscapers who always exceed expectations with their attention to detail, creativity, and dedication. Our outdoor space has been transformed beautifully thanks to their expertise and passion.</p>
+                    <p class="text-xl pt-4">TMilano Johnson, Los Angeles</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-10 lg:p-p-border container-box">
+            <hr class="border-t-4 border-black border-solid" />
+
+            <div class="grid md:grid-cols-2 pt-8 md:gap-8">
+                <div>
+                    <h2 class="text-4xl font-semibold pb-4">Join our newsletter</h2>
+                    <p class="text-xl pb-8">Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque</p>
+                </div>
+
+                <div>
+                    <div class="bg-sky_blue p-8 rounded-lg max-w-sm float-right">
+                        <input type="email" class="bg-white py-2 px-3 w-full rounded-lg text-xl" placeholder="Email address" />
+                        <input type="button" class="text-center bg-prussian_blue py-2 text-white w-full rounded-lg mt-5 text-xl" value="Join" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-10 lg:px-[102px]">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+                <img src="images/Barrel & Bucket.png" class="p-2 bg-prussian_blue w-1/2 lg:w-full" alt="" />
+                <p class="text-xl pt-4">Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">Company</h3>
+                <p class="pt-4 text-xl">About</p>
+                <p class="pt-4 text-xl">Contact Us</p>
+                <p class="pt-4 text-xl">Careers</p>
+                <p class="pt-4 text-xl">Blog</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">Support</h3>
+                <p class="pt-4 text-xl">Getting Started</p>
+                <p class="pt-4 text-xl">Help Center</p>
+                <p class="pt-4 text-xl">Chat Support</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">Contact</h3>
+
+                <p class="pt-4 text-xl"><span class="material-icons-round relative top-2 text-2xl pr-2">mail</span>contact@company.com</p>
+                <p class="pt-4 text-xl"><span class="material-icons-round relative top-2 text-2xl pr-2">phone</span>+1 (234) 567 8901</p>
+                <p class="pt-4 text-xl"><span class="material-icons-round relative top-2 text-2xl pr-2">location_on</span>79 McAllister St <br />San Francisco, 79102</p>
+            </div>
+        </div>
+
+        <p class="text-center pt-16">2024 Adriel Oloko.</p>
+    </footer>
+</body>
+</html>

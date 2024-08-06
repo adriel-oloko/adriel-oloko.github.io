@@ -1,0 +1,206 @@
+html, body {
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Mova';
+    src: url('../fonts/Mova.ttf');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    src: url('../fonts/MaterialIcons-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    src: url('../fonts/MaterialSymbolsOutlined[FILL\,GRAD\,opsz\,wght].ttf');
+}
+
+/*@font-face {
+    font-family: 'Inter';
+    src: url('../src/fonts/Inter/Inter-Black.ttf');
+    src: url('../src/fonts/Inter/Inter-Bold.ttf');
+    src: url('../src/fonts/Inter/Inter-ExtraBold.ttf');
+    src: url('../src/fonts/Inter/Inter-ExtraLight.ttf');
+    src: url('../src/fonts/Inter/Inter-Light.ttf');
+    src: url('../src/fonts/Inter/Inter-Medium.ttf');
+    src: url('../src/fonts/Inter/Inter-Regular.ttf');
+    src: url('../src/fonts/Inter/Inter-SemiBold.ttf');
+    src: url('../src/fonts/Inter/Inter-Thin.ttf');
+}*/
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right, #e0e1dd, transparent), url('../images/white-abstract-background-with-hexagon-pattern-style-seamless-concept_7505-1703.png');
+    background-size: 50%;
+    background-position: left, 50%;
+    background-repeat: no-repeat, repeat;
+}
+
+#carSelection div { background-position: 25% 50%; background-repeat: no-repeat;}
+
+#gwagon { background-image: url('../images/1-mercedes-benz-g-class-2019-rt-hero-front.webp');}
+#rollsr { background-image: url('../images/1314801.jpg');}
+#eclass { background-image: url('../images/BestCarWeb2-e1672319588880.jpg');}
+#prado { background-image: url('../images/WhatsApp\ Image\ 2023-08-09\ at\ 12.50.46.jpeg');}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #fff;  /* old IE */
+    background-color: #fff;  /* Modern Browsers */
+}
+
+#s1 h2, #s3 h3 { font-family: 'Mova';}
+#s2, #f1 { background-image: linear-gradient(#0D1B2A, transparent), url('../images/2560x1440-mercedes-g-wagon-4k_1547936829.jpg');}
+#s2 h2 { font-size: 3rem; line-height: 3rem;}
+#s6 > div:nth-of-type(1) { background-image: url('../images/Snapinsta.app_416765202_17887363232973967_7240450632970985874_n_1080-4_3.jpg'); }
+
+#heroHeader span, #s4 span { display: inline-block; }
+#heroHeader span span, #s4 span span {
+    opacity: 0;
+    transform: translateY(2.5rem);
+}
+
+.container-box {
+    transform: translateY(10rem);
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.container-right {
+    transform: translateY(10rem) translateX(10rem);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.container-line {
+    width: 0px;
+    transition: all 2s ease;
+}
+
+.activeLine {
+    width: 100%;
+}
+
+.active {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.review-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.review-right {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reviewActiveRight, .reviewActiveLeft {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.marquee .a { animation: firstMarquee 12s linear infinite; }
+.marquee .b { animation: secondMarquee 12s linear infinite; animation-delay: 6s;}
+
+.marquee .ra { animation: revfirstMarquee 12s linear infinite; }
+.marquee .rb { animation: revsecondMarquee 12s linear infinite; animation-delay: 6s;}
+
+@keyframes firstMarquee {
+    0% { left: 35rem;}
+    100% { left: -35rem; }
+}
+
+@keyframes secondMarquee {
+    0% { left: 35rem;}
+    100% { left: -35rem; }
+}
+
+@keyframes revfirstMarquee {
+    0% { left: -35rem;}
+    100% { left: 35rem; }
+}
+
+@keyframes revsecondMarquee {
+    0% { left: -35rem;}
+    100% { left: 35rem; }
+}
+
+/*.marquee div {
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -72rem;
+    }
+}*/
+*::-webkit-scrollbar {
+    width: 0px;
+    color: blue;
+}
+
+@media (min-width: 768px) {
+    #heroImage { background-image: url('../images/Snapinsta.app_384207336_299348779394620_733556755369596125_n_1080-removebg-preview.png');}
+    .marquee .a { animation: none;}
+
+    .reviewActiveRight {
+        transform: translateX(80%);
+        opacity: 1;
+    }
+    
+    .reviewActiveLeft {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    #loader { background-size: 25%;}
+}
+
+@media (min-width: 1280px) {
+    header { background-size: 12.5%; background}
+}

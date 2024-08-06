@@ -1,0 +1,139 @@
+html, body {
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Visia Duo';
+    src: url('../src/fonts/Visia\ Duo/VisiaPro-BoldOutline.ttf');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    src: url('../src/fonts/MaterialIcons-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Material Icons Round';
+    src: url('../src/fonts/MaterialIconsRound-Regular.otf');
+}
+
+/*@font-face {
+    font-family: 'Inter';
+    src: url('../src/fonts/Inter/Inter-Black.ttf');
+    src: url('../src/fonts/Inter/Inter-Bold.ttf');
+    src: url('../src/fonts/Inter/Inter-ExtraBold.ttf');
+    src: url('../src/fonts/Inter/Inter-ExtraLight.ttf');
+    src: url('../src/fonts/Inter/Inter-Light.ttf');
+    src: url('../src/fonts/Inter/Inter-Medium.ttf');
+    src: url('../src/fonts/Inter/Inter-Regular.ttf');
+    src: url('../src/fonts/Inter/Inter-SemiBold.ttf');
+    src: url('../src/fonts/Inter/Inter-Thin.ttf');
+}*/
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-icons-round {
+    font-family: 'Material Icons Round';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to top, #18206f, transparent), url('../images/closeup-golden-bitcoins-dark-reflective-surface-histogram-decreasing-crypto.jpg');
+}
+
+.container-box {
+    transform: translateY(10rem);
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.container-left {
+    transform: translateX(-15rem) translateY(5rem);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.container-right {
+    transform: translateX(15rem) translateY(5rem);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.container-scale {
+    transform: scale(1.2);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.active {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.loader::after,
+.loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+}
+.loader::after {
+    animation-delay: 1s;
+}
+  
+@keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+    color: blue;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+    #containedImage { bottom: 5rem;}
+    #slideshowCount { font-size: 1000%; } 
+
+    .marquee div {animation: none; }
+}
+
+@media (min-width: 1280px) {
+    
+}
