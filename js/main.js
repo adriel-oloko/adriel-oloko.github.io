@@ -15,7 +15,7 @@ jQuery(document).ready(($) => {
         }
     }
     
-    $('<img/>').attr('src', 'https://adrieloloko.com/images/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky.jpg').on('load', function() {
+    $('<img/>').attr('src', 'https://adriel-oloko.github.io/images/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky.jpg').on('load', function() {
             $(this).remove(); 
             $('#nameTitle').toggleClass('scaleUp');
             $('#nameTitle, #loadScreen > div').animate({
